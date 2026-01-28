@@ -17,7 +17,7 @@ public class JdbcExample {
             //2. Connect
             Connection conn = DriverManager.getConnection(url, user, pass);
             //3. Create statement
-            PreparedStatement stmt = conn.prepareStatement("select * from emp");
+            PreparedStatement stmt = conn.prepareStatement("select * from emp ");
             //4. Execute query
             ResultSet rs = stmt.executeQuery();
             // 5. Process results
